@@ -4,7 +4,9 @@ Following several tutorials to create a web scraper for craigslist that looks fo
 The tutorial links are posted below:
 
 https://towardsdatascience.com/web-scraping-craigslist-a-complete-tutorial-c41cea4f4981
+
 https://www.youtube.com/watch?v=XVv6mJpFOb0&ab_channel=freeCodeCamp.org
+
 https://www.youtube.com/watch?v=PeTagmeYKjw&ab_channel=JohnWatsonRooney
 
 
