@@ -4,6 +4,9 @@ import requests
 from requests import get
 from bs4 import BeautifulSoup
 import time
+import pandas as pd
+
+scraped_posts = []
 
 
 class CraigsPost:
@@ -41,7 +44,7 @@ def find_cars():
     print(type(posts))  # double checks you get a ResultSet
     print(len(posts))  # double check you get max results (120)
 
-    for index, post in enumerate(posts):
+    for index, post in enumerate(posts, 6):
         # returns the first result scraped
         post_one_price = post.find('span', class_='result-price')
         post_one_price_string = post_one_price.string
@@ -64,16 +67,25 @@ def find_cars():
 
         cg_post = CraigsPost(price=post_one_price_string, time=post_one_datetime, link=post_one_link,
                              heading=post_one_heading, location=post_one_location_string)
-        with open(F"posts/{index}.txt", 'w', encoding="utf8") as f:
-            f.write(cg_post.__str__())
+
+        scraped_posts.append(cg_post)
+
+        # with open(F"posts/{index}.txt", 'w', encoding="utf8") as f:
+        #     f.write(cg_post.__str__())
+
+    data_frame = pd.DataFrame(scraped_posts)
+    data_frame.to_csv('cglist_auto_posts.csv')
+    data_frame.to_excel('cglist_auto_posts.xlsx')
+    print("Saved to file")
 
 
 def main():
-    while True:
-        find_cars()
-        time_wait = randint(1, 5)
-        print(F"Waiting {time_wait} minutes...")
-        time.sleep(time_wait * 60)
+    find_cars()
+    # while True:
+    #     find_cars()
+    #     time_wait = randint(1, 5)
+    #     print(F"Waiting {time_wait} minutes...")
+    #     time.sleep(time_wait * 60)
 
 
 if __name__ == '__main__':
