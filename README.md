@@ -1,7 +1,8 @@
-## craigslit_webscraper
+## craigslist_webscraper
 Following several tutorials to create a web scraper for craigslist that looks for cars that suit my criteria and emails them to myself in a timely basis.
 
-The tutorial links are posted below:\n
+The tutorial links are posted below:
+
 https://towardsdatascience.com/web-scraping-craigslist-a-complete-tutorial-c41cea4f4981
 https://www.youtube.com/watch?v=XVv6mJpFOb0&ab_channel=freeCodeCamp.org
 https://www.youtube.com/watch?v=PeTagmeYKjw&ab_channel=JohnWatsonRooney
