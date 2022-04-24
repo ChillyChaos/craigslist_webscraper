@@ -17,6 +17,6 @@ So recently I sold my vehicle and am now looking for a new car. There's plenty o
 This script checks through Craigslist posts in the automotive section of the classifieds, but can be adapted to search through any listings, as well as filter the results. The results will be emailed in a timely basis.
 
 ## Technologies:
-Python
-BeautifulSoup
+Python,
+BeautifulSoup,
 Pandas
