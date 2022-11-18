@@ -15,7 +15,7 @@ https://www.youtube.com/watch?v=JRCJ6RtE3xU&t=1301s
 So recently I sold my vehicle and am now looking for a new car. There's plenty of good deals to be found on Craigslist, but I've already found myself missing out on some vehicles that fit my criteria due to seeing the posting too late. As they say, the early bird gets the worm. This little project will also act as a guide for making another scraper that will check facebook marketplace for more vehicles.
 
 # The Solution
-This script checks through Craigslist posts in the automotive section of the classifieds, but can be adapted to search through any listings, as well as filter the results. The results will be emailed in a timely basis.
+This script checks through Craigslist posts in the automotive section of the classifieds, but can be adapted to search through any listings, as well as filter the results.
 
 ## Technologies:
 Python,
